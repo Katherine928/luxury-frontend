@@ -53,6 +53,13 @@ export default async function handler(req, res) {
           automatic_tax: {
             enabled: true,
           },
+          tax_id_collection: {
+            enabled: true,
+          },
+          customer_update: {
+            name: "auto",
+            shipping: "auto",
+          },
           success_url: `${req.headers.origin}/success?&session_id={CHECKOUT_SESSION_ID}`,
           cancel_url: `${req.headers.origin}/canceled`,
         });
@@ -104,6 +111,13 @@ export default async function handler(req, res) {
           }),
           automatic_tax: {
             enabled: true,
+          },
+          tax_id_collection: {
+            enabled: true,
+          },
+          customer_update: {
+            name: "auto",
+            shipping: "auto",
           },
           success_url: `${req.headers.origin}/success?&session_id={CHECKOUT_SESSION_ID}`,
           cancel_url: `${req.headers.origin}/canceled`,
