@@ -72,7 +72,9 @@ export default function Cart() {
             <h1>Your Shopping Bag is Empty</h1>
 
             <Link href={"/"}>
-              <Check onClick={() => setShowCart(false)}>SEE WHAT'S NEW</Check>
+              <Check onClick={() => setShowCart(false)}>
+                SEE WHAT&apos;S NEW
+              </Check>
             </Link>
           </EmptyStyle>
         )}

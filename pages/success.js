@@ -33,7 +33,7 @@ export default function Success({ order }) {
         <h1>Thank You!</h1>
         <h3>
           We sent an email to <span>{order.customer_details.email}</span> with
-          your order confirmation and receipt. If the email hasn't arrived
+          your order confirmation and receipt. If the email hasn&apos;t arrived
           within two minutes, please check your spam folder to see if the email
           was routed there.
         </h3>
