@@ -9,9 +9,7 @@ export default async function handler(req, res) {
   const user = session?.user;
   if (user) {
     const stripeId =
-      user[
-        "https://https://luxury-frontend-chi.vercel.app//stripe_customer_id"
-      ];
+      user["https://luxury-frontend-chi.vercel.app//stripe_customer_id"];
     if (req.method === "POST") {
       try {
         const session = await stripe.checkout.sessions.create({
