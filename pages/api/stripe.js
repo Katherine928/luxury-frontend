@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const session = getSession(req, res);
   const user = session?.user;
   if (user) {
-    const stripeId = user["https://stormy-plains-91683.herokuapp.com/stripe_customer_id"];
+    const stripeId = user["https://luxury-frontend-ten.vercel.app/stripe_customer_id"];
     if (req.method === "POST") {
       try {
         const session = await stripe.checkout.sessions.create({
