@@ -20,8 +20,6 @@ export default function Nav() {
   );
 }
 const FooterWrapper = styled.div`
-  position: fixed;
-  bottom: 0;
   width: 100%;
 
   .footer {
